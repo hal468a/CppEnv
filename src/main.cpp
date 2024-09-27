@@ -8,6 +8,7 @@ int main(void) {
 	// std::cout << "> ";
 	// std::cin >> temp;
 
+	std::cout << __cplusplus << std::endl;
 	temp = __cplusplus % 100000 % 10000;
 	// std::cout << "temp % 10000 % 10000:" << temp << std::endl;
 
