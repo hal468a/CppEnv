@@ -1,0 +1,10 @@
+services:
+  CppEnv:
+    image: gcc:latest
+    container_name: cppenv
+    volumes:
+      - ./src:/src
+    working_dir: /src
+    command: >
+      bash -c "g++ main.cpp -o main
+              ./main"
