@@ -31,7 +31,6 @@ void merge(int* num1, int m, int* num2, int n){
 
     while(p2 >= 0){
         num1[p] = num2[p2];
-        // show(num1, m, n);
 
         p2--;
         p--;
@@ -46,6 +45,7 @@ int main(void){
     int m = 3; int n = 3;
 
     merge(num1, m, num2, n);
+    show(num1, m, n);
 
     return 0;
 }
