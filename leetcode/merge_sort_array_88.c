@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// LeetCode 88. Merge Sort Array
+
 void show(int* nums, int m , int n){
     for(int i = 0; i < m + n; i++){
         printf("%d ", nums[i]);
