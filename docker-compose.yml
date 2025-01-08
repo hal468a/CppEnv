@@ -4,7 +4,8 @@ services:
     container_name: cppenv
     volumes:
       - ./src:/src
-    working_dir: /src
+      - ./leetcode:/leetcode
+    working_dir: /leetcode
     command: >
-      bash -c "gcc -std=c99 kahan_sum.c -o kahan_sum
-              ./kahan_sum"
+      bash -c "gcc -std=c99 main.c -o main
+              ./main"
