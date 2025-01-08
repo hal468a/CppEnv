@@ -18,12 +18,12 @@ void merge(int* num1, int m, int* num2, int n){
     while(p1 >= 0 && p2 >= 0){
         if(num1[p1] >= num2[p2]){
             num1[p] = num1[p1];
-            show(num1, m, n);
+            // show(num1, m, n);
 
             p1--;
         } else {
             num1[p] = num2[p2];
-            show(num1, m, n);
+            // show(num1, m, n);
             p2--;
         }
         p--;
@@ -31,7 +31,7 @@ void merge(int* num1, int m, int* num2, int n){
 
     while(p2 >= 0){
         num1[p] = num2[p2];
-        show(num1, m, n);
+        // show(num1, m, n);
 
         p2--;
         p--;
