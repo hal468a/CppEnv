@@ -4,8 +4,7 @@ services:
     container_name: cppenv
     volumes:
       - ./src:/src
-      - ./leetcode:/leetcode
-    working_dir: /leetcode
+    working_dir: /src
     command: >
       bash -c "gcc -std=c99 main.c -o main
               ./main"
