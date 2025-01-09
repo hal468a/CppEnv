@@ -27,14 +27,14 @@ int main(void){
     int target = 3;
 
     int k = removeElement(num1, numSize, target);
-    show(num1, numSize - 1);
+    show(num1, k);
 
     // Case 2:
     int num2[] = {0,1,2,2,3,0,4,2}; // {0,1,4,0,3}
     numSize = sizeof(num2) / sizeof(num2[0]);
     target = 2;
     k = removeElement(num2, numSize, target);
-    show(num2, numSize);
+    show(num2, k);
 
     return 0;
 }
