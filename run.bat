@@ -18,6 +18,7 @@ if %ERRORLEVEL% NEQ 0 (
     )
 
     echo Docker Desktop is now running.
+    echo ===============================
 )
 
 :: 執行 docker compose 指令

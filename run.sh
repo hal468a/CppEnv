@@ -14,6 +14,7 @@ if ! docker info >/dev/null 2>&1; then
   done
 
   echo "Docker Desktop is now running."
+  echo "==============================="
 fi
 
 # 執行 docker compose 指令
