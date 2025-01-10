@@ -1,10 +1,10 @@
 services:
-  CppEnv:
+  cppenv:
     image: gcc:latest
-    container_name: cppenv
+    container_name: CppEnv
     volumes:
       - ./src:/src
     working_dir: /src
     command: >
-      bash -c "gcc -std=c99 main.c -o main
-              ./main"
+      bash -c "gcc -std=c99 main.c -o main &&
+              ./main && exec bash"

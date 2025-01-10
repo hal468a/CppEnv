@@ -22,4 +22,4 @@ if %ERRORLEVEL% NEQ 0 (
 )
 
 :: 執行 docker compose 指令
-docker compose run --rm CppEnv
+docker compose run --rm cppenv

@@ -1,19 +1,42 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void show(int* nums, int numSize);
+
+int removeElement(int* nums, int numsSize, int val){
+    int k = 0;
+    for(int i = 0; i < numsSize; i++){
+        if(nums[i] != val){
+            nums[k] = nums[i];
+            k++;
+        }
+    }
+    return k;
+}
+
 int main(void){
 
-    int grade[] = {97, 96, 84, 81, 85, 91, 90, 90, 85};
-    double gpa = 0.0;
-    int numSize = sizeof(grade) / sizeof(grade[0]);
+    // Case 1:
+    int num1[] = {3,2,2,3}; // {2,2}
+    int numSize = sizeof(num1) / sizeof(num1[0]);
+    int target = 3;
 
-    for(int i = 0; i <= numSize; i++){
-        grade[i] = grade[i] * 3;
-        gpa = gpa + grade[i];
-    }
-    
-    gpa = gpa / (numSize * 3);
-    printf("%.2f", gpa);
+    int k = removeElement(num1, numSize, target);
+    show(num1, k);
+
+    // Case 2:
+    int num2[] = {0,1,2,2,3,0,4,2}; // {0,1,4,0,3}
+    numSize = sizeof(num2) / sizeof(num2[0]);
+    target = 2;
+    k = removeElement(num2, numSize, target);
+    show(num2, k);
 
     return 0;
+}
+
+void show(int* nums, int numSize){
+    for(int i = 0; i < numSize; i++){
+        printf("%d ", nums[i]);
+    }
+    printf("\n");
 }
