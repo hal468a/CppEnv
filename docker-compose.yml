@@ -7,4 +7,4 @@ services:
     working_dir: /src
     command: >
       bash -c "gcc -std=c99 main.c -o main &&
-              ./main && exec bash"
+              ./main"

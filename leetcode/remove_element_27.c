@@ -1,12 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void show(int* nums, int numSize){
-    for(int i = 0; i < numSize; i++){
-        printf("%d ", nums[i]);
-    }
-    printf("\n");
-}
+void show(int* nums, int numSize);
 
 int removeElement(int* nums, int numsSize, int val){
     int k = 0;
@@ -37,4 +32,11 @@ int main(void){
     show(num2, k);
 
     return 0;
+}
+
+void show(int* nums, int numSize){
+    for(int i = 0; i < numSize; i++){
+        printf("%d ", nums[i]);
+    }
+    printf("\n");
 }
